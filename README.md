@@ -40,3 +40,14 @@ Send a message to the email collected with a 'Thanks' message
 - You may use whatever tools, colours, technologies you see fit. Take as much time as you need.
 
 - Tip: it is better to do a few things well vs trying to do all of the above in the same time.
+
+
+## App setup
+
+I create a Yeoman Gulp as [generator-gulp-webapp](https://github.com/yeoman/generator-gulp-webapp)
+
+## Running the app
+
+- Run `gulp serve` to preview and watch for changes
+
+- Run `gulp` to build your webapp for production

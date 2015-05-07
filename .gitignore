@@ -1,9 +1,7 @@
-.DS_Store
-
-### OSX template
-.DS_Store
-
-
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
+test/bower_components
 .idea/
-
-
