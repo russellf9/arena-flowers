@@ -4,15 +4,18 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
+var sourcemaps = require('gulp-sourcemaps');
+var postcss = require('gulp-postcss');
 var reload = browserSync.reload;
 
 gulp.task('styles', function () {
+
   return gulp.src('app/styles/main.css')
-    .pipe($.sourcemaps.init())
-    .pipe($.postcss([
+    .pipe(sourcemaps.init())
+    .pipe(postcss([
       require('autoprefixer-core')({browsers: ['last 1 version']})
     ]))
-    .pipe($.sourcemaps.write())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
 });
