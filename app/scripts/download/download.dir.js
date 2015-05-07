@@ -2,7 +2,6 @@
   angular.module('arenaFlowersApp')
     .directive('download', Download);
 
-
   function Download(DownloadService){
     return {
       restrict: 'EA',
@@ -11,26 +10,23 @@
       },
       templateUrl:'/scripts/download/download.html',
       link: function(scope){
-
         function postCodeIsValid(postcode) {
-          return true;
+          postcode = postcode.replace(/\s/g, "");
+          var regex = /[A-Z]{1,2}[0-9]{1,2} ?[0-9][A-Z]{2}/i;
+          return regex.test(postcode);
         }
         // the functions here
         scope.update = function(user){
-          console.log('update: ', user);
-
           if(postCodeIsValid(user.postcode)) {
-            console.log('ok');
-
             DownloadService.downloadBook(user).then(function(result){
               console.log('download status: ', result);
             });
+          } else {
+            console.log('invalid postcode!');
           }
-
         }
       }
     };
   }
-
-
 })();
+
