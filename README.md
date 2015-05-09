@@ -56,7 +56,7 @@ I create a Yeoman Gulp as [generator-gulp-webapp](https://github.com/yeoman/gene
 
 - Run `gulp` to build your webapp for production
 
-### Note:
+**Note:**
 
 I've added all the Node dependencies using the `npm install --save-dev` syntax, so all they should all load after the `serve` task is run.
 
@@ -70,4 +70,14 @@ I've created a Yeoman Angular Web App.
 
 - I'll revisit the app as time permits to make it beautiful.
 
+### TODO
+* [x] resolve NPM dependencies
+* [x] add bootstrap ui designs
+* [ ] redesign
+
+## Design
+
+I've used PhotoShop to create a quick mock up:
+
+![Screenshot](/design/mock-up-2.jpg?raw=true "Mockup-2")
 
