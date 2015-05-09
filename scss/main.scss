@@ -65,6 +65,17 @@ body {
     padding: 14px 24px;
   }
 }
+// ensure we are only adding to the correct asset
+.jumbotron-header {
+  padding: 0;
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
 
 /* Supporting marketing content */
 .marketing {

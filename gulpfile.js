@@ -96,6 +96,7 @@ gulp.task('serve', ['styles', 'fonts'], function () {
   ]).on('change', reload);
 
   gulp.watch('app/styles/**/*.css', ['styles']);
+  gulp.watch('scss/**/*.scss', ['sass']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });

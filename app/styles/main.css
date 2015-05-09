@@ -49,6 +49,13 @@ body {
     font-size: 21px;
     padding: 14px 24px; }
 
+.jumbotron-header {
+  padding: 0; }
+  .jumbotron-header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0; }
