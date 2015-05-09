@@ -90,6 +90,12 @@ body {
   margin-top: 20px;
   margin-bottom: 20px; }
 
+.panel-default > .panel-heading {
+  background-color: #9E9E9E; }
+
+.panel-default {
+  min-height: 200px; }
+
 input {
   min-width: 200px; }
 

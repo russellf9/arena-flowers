@@ -115,9 +115,22 @@ body {
   width: 100%;
 }
 
+//rows
 .row-info {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.row-thumbnail {
+
+}
+.panel-default > .panel-heading {
+  background-color: $primary-color;
+}
+
+
+.panel-default {
+  min-height: 200px;
 }
 
 input {
