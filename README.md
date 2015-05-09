@@ -56,6 +56,10 @@ I create a Yeoman Gulp as [generator-gulp-webapp](https://github.com/yeoman/gene
 
 - Run `gulp` to build your webapp for production
 
+### Note:
+
+I've added all the Node dependencies using the `npm install --save-dev` syntax, so all they should all load after the `serve` task is run.
+
 ## State of the test
 
 I've created a Yeoman Angular Web App.
