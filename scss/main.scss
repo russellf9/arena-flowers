@@ -109,11 +109,7 @@ body {
   }
 }
 
-.greyish {
-  background-color: #CCCCCC;
-  color: #030303;
-  width: 100%;
-}
+
 
 //rows
 .row-info {
@@ -128,6 +124,11 @@ body {
   background-color: $primary-color;
 }
 
+.btn-success {
+  color: $primary-text-color;
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+}
 
 .panel-default {
   min-height: 200px;

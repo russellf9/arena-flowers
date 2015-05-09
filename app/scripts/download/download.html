@@ -1,27 +1,35 @@
-<div class="row download">
+<!--<div class="row download">-->
 
-  <div class="col-md-12 text-center">
-    <p style="font-size:11pt!important;">Add your details and get our wonderful book!</p>
+  <!--<div class="col-md-12 text-center">-->
+    <!--<p style="font-size:11pt!important;">Add your details and get our wonderful book!</p>-->
+
+
+  <!--</div>-->
+
+<!--</div>-->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add your details to get our book!</h3>
+  </div>
+  <div class="panel-body">
     <form novalidate class="form-horizontal" role="form">
       <div class="form-group">
-        <label for="inputName3" class="col-sm-2 control-label">Postcode:</label>
+        <label for="inputName3" class="col-sm-4 control-label">Postcode:</label>
         <div class="col-sm-4">
           <input class="form-control" ng-model="user.postcode" id="inputName3" placeholder="Where you live..">
         </div>
       </div>
       <div class="form-group">
-        <label for="inputEmail" class="col-sm-2 control-label">Email:</label>
+        <label for="inputEmail" class="col-sm-4 control-label">Email:</label>
         <div class="col-sm-4">
           <input class="form-control" type="email" ng-model="user.email" id="inputEmail" placeholder="yourname@site.com">
         </div>
       </div>
       <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
+        <div class="col-sm-offset-4 col-sm-6">
           <button ng-disabled="!user.postcode || !user.email" type="submit" class="btn btn-md btn-success" ng-click="update(user)">Download</button>
         </div>
       </div>
     </form>
-
   </div>
-
 </div>

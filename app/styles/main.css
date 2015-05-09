@@ -81,17 +81,17 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0; } }
-.greyish {
-  background-color: #CCCCCC;
-  color: #030303;
-  width: 100%; }
-
 .row-info {
   margin-top: 20px;
   margin-bottom: 20px; }
 
 .panel-default > .panel-heading {
   background-color: #9E9E9E; }
+
+.btn-success {
+  color: #212121;
+  background-color: #9E9E9E !important;
+  border-color: #9E9E9E !important; }
 
 .panel-default {
   min-height: 200px; }
