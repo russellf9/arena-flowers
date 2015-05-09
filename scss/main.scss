@@ -39,6 +39,7 @@ body {
 /* overide bootstrap style */
 .navbar {
   min-height: 100px;
+  background: rgba($primary-color-light, 0.5);
 }
 
 /* Custom page footer */
@@ -54,6 +55,7 @@ body {
 
 /* Main marketing message*/
 .jumbotron {
+
   margin-top: 75px;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;

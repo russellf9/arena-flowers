@@ -28,7 +28,8 @@ body {
 
 /* overide bootstrap style */
 .navbar {
-  min-height: 100px; }
+  min-height: 100px;
+  background: rgba(97, 97, 97, 0.5); }
 
 /* Custom page footer */
 .footer {
