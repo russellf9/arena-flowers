@@ -82,3 +82,14 @@ I've used PhotoShop to create a quick mock up:
 
 ![Screenshot](/design/mock-up-2.jpg?raw=true "Mockup-2")
 
+## SASS
+
+I've created a basic SASS folder and task, ideally I'm make a more modular structure for both the Gulp tasks and the SASS files.
+
+To update the CSS run:
+
+
+```
+$ gulp sass
+```
+
