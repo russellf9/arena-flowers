@@ -6,6 +6,9 @@ var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
+var sass = require('gulp-ruby-sass'),
+  streamqueue = require('streamqueue');
+
 var reload = browserSync.reload;
 
 gulp.task('styles', function () {
@@ -115,3 +118,64 @@ gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () 
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });
+
+// TODO
+// ideally the gulp tasks would be neatly in modules
+// so the sass task would be in the location: `./gulp/build/styles.js`
+
+var config = require('./gulp/config');
+
+
+// performs operations to distribute the css files
+//gulp.task('sass', function() {
+//
+//
+//  var options = config.sass.options;
+//  options.style = 'expanded';
+//
+//  var sassStream = sass(config.sass.rubySrc, options)
+//      .pipe(gulp.plugins.autoprefixer(config.sass.autoprefixer))
+//      .on('error', errorHandler),
+//   // cssStream = gulp.src(gulp.cssFiles),
+//    targetDir = config.paths.sass.dest;
+//
+//  return streamqueue({objectMode: true}, sassStream)
+//    .pipe(gulp.plugins.concat('main.css'))
+//    //.pipe(plugins.if(build, plugins.stripCssComments()))
+//    //.pipe(plugins.if(build, plugins.rev()))
+//    .pipe(gulp.dest(path.join(targetDir, 'styles')))
+//    .on('error', errorHandler)
+//    .pipe(gulp.plugins.notify({
+//      title: 'SASS',
+//      message: 'SASS completed.  New CSS created!',
+//      sound: 'Pop'
+//    }));
+//});
+gulp.task('sass', function () {
+  return sass('./scss/')
+    .on('error', function (err) {
+      console.error('Error!', err.message);
+    })
+    .pipe(gulp.dest('./app/styles'));
+});
+
+
+/**
+ * gulp.task('sass', function () {
+    return sass('source/')
+        .on('error', function (err) {
+            console.error('Error!', err.message);
+        })
+        .pipe(gulp.dest('result'));
+});
+ * @param error
+ */
+// Handle errors
+function errorHandler(error) {
+  console.log('Gulp Styles Error: ', error.toString());
+  /*jshint validthis:true */
+  this.emit('end');
+}
+
+// http://localhost:9000/styles/main.css
+

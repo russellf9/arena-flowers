@@ -74,6 +74,7 @@ I've created a Yeoman Angular Web App.
 * [x] resolve NPM dependencies
 * [x] add bootstrap ui designs
 * [ ] redesign
+* [ ] add SASS color palette
 
 ## Design
 

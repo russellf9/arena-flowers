@@ -1,6 +1,9 @@
 // bower:scss
 // endbower
 
+@import "modules/colors";
+@import "modules/palette";
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -68,7 +71,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 1200px;
   }
 
   /* Remove the padding we set earlier */
@@ -102,3 +105,16 @@ body {
 input {
   min-width: 200px;
 }
+
+.primary-color-light {
+  background-color: $primary-color-light
+}
+
+.primary-color-light {
+  background-color: $primary-color-light
+}
+.divider {
+  background-color: $divider-color;
+}
+
+
