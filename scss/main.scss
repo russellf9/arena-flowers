@@ -119,6 +119,10 @@ body {
   margin-bottom: 20px;
 }
 
+.row-controls {
+  min-height: 125px;
+}
+
 .row-thumbnails {
   min-height: 870px;
   background-color: $lighter-divider-color;
@@ -138,7 +142,15 @@ body {
   margin-left: auto;
   width: 220px; height: 220px;
   border-color: $accent-color;
-  background-color: $flesh;
+  cursor: pointer;
+}
+
+.caption > h3 {
+  margin-top: 5px !important;
+}
+
+.caption > p {
+  text-align: center;
 }
 
 
