@@ -88,6 +88,11 @@ body {
 .row-controls {
   min-height: 125px; }
 
+.item-select {
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px; }
+
 .row-thumbnails {
   min-height: 870px;
   background-color: #d5d5d5;
