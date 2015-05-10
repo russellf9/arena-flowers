@@ -42,7 +42,6 @@ body {
 
 /* Main marketing message*/
 .jumbotron {
-  margin-top: 75px;
   text-align: center;
   border-bottom: 1px solid #e5e5e5; }
   .jumbotron .btn {
@@ -50,6 +49,7 @@ body {
     padding: 14px 24px; }
 
 .jumbotron-header {
+  margin-top: 75px;
   padding: 0; }
   .jumbotron-header img {
     display: block;
@@ -84,6 +84,22 @@ body {
 .row-info {
   margin-top: 20px;
   margin-bottom: 20px; }
+
+.row-thumbnails {
+  min-height: 870px;
+  background-color: #d5d5d5;
+  padding: 4px; }
+  .row-thumbnails .thumbnail {
+    height: 340px; }
+
+.thumbnail > img, .thumbnail a > img {
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 220px;
+  height: 220px;
+  border-color: #607D8B;
+  background-color: #ffbcaa; }
 
 .panel-default > .panel-heading {
   background-color: #9E9E9E; }

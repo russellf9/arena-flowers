@@ -56,7 +56,7 @@ body {
 /* Main marketing message*/
 .jumbotron {
 
-  margin-top: 75px;
+
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 
@@ -67,6 +67,8 @@ body {
 }
 // ensure we are only adding to the correct asset
 .jumbotron-header {
+
+  margin-top: 75px;
   padding: 0;
 
   img {
@@ -117,9 +119,30 @@ body {
   margin-bottom: 20px;
 }
 
-.row-thumbnail {
+.row-thumbnails {
+  min-height: 870px;
+  background-color: $lighter-divider-color;
+  padding: 4px;
+
+  .thumbnail {
+    height: 340px;
+
+  }
+
 
 }
+
+.thumbnail > img, .thumbnail a > img {
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 220px; height: 220px;
+  border-color: $accent-color;
+  background-color: $flesh;
+}
+
+
+
 .panel-default > .panel-heading {
   background-color: $primary-color;
 }
