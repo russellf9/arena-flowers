@@ -64,11 +64,12 @@ I've added all the Node dependencies using the `npm install --save-dev` syntax, 
 
 - I've created a Yeoman Angular Web App.
 
-- ~~At present the landing page is a grey bootstrap view only :-( ~~
+- ~~At present the landing page is a grey bootstrap view only :-(~~
 
 - The Angular.js code is functioning and the basic requirements are complete.
 
-- ~~I'll revisit the app as time permits to make it beautiful. ~~
+
+~~I'll revisit the app as time permits to make it beautiful.~~
 
 - The `Download Widget` has been re-styled
 
