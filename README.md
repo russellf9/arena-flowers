@@ -68,8 +68,7 @@ I've added all the Node dependencies using the `npm install --save-dev` syntax, 
 
 - The Angular.js code is functioning and the basic requirements are complete.
 
-
-~~I'll revisit the app as time permits to make it beautiful.~~
+- ~~I'll revisit the app as time permits to make it beautiful.~~
 
 - The `Download Widget` has been re-styled
 
@@ -77,7 +76,7 @@ I've added all the Node dependencies using the `npm install --save-dev` syntax, 
 
 - Example `offer` elements have been added
 
-- The item selection has been modified
+- The item selection has been mocked up
 
 ### TODO
 * [x] resolve NPM dependencies
