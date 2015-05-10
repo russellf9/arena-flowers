@@ -93,6 +93,69 @@ body {
   padding-left: 25px;
   padding-right: 25px; }
 
+.checkbox-container {
+  position: relative;
+  padding: 10px;
+  width: 150px;
+  background-color: #EEEEEE; }
+
+.checkbox-group {
+  position: relative;
+  background-color: #EEEEEE;
+  width: 160px; }
+
+.checkbox {
+  display: block; }
+
+/* Hide Checkbox Input */
+.checkbox-group input[type=checkbox] {
+  display: none; }
+
+/* Style Label */
+.checkbox-group label {
+  padding-left: 5px;
+  cursor: pointer;
+  margin-bottom: 0; }
+
+/* Style span tag */
+.checkbox-group label span {
+  display: block;
+  position: absolute;
+  left: 0;
+  transition-duration: 0.3s; }
+
+/* Style box */
+.checkbox-group label .box {
+  background: #d9e1e7;
+  height: 20px;
+  width: 20px;
+  z-index: 9;
+  transition-delay: 0.2s; }
+
+/* Check icon: create border on the bottom and right only and then rotate */
+.checkbox-group label .check {
+  top: 0;
+  left: 7px;
+  width: 7px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  opacity: 0;
+  z-index: 8;
+  transform: rotate(180deg);
+  transition-delay: 0.3s; }
+
+/* Change color of box when checkbox is checked */
+input[type=checkbox]:checked ~ label .box {
+  background: #129fdd; }
+
+/* Rotate and show check icon when checkbox is checked */
+input[type=checkbox]:checked ~ label .check {
+  opacity: 1;
+  transform: scale(1) rotate(45deg);
+  z-index: 10; }
+
 .row-thumbnails {
   min-height: 870px;
   background-color: #d5d5d5;
