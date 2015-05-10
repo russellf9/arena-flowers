@@ -62,19 +62,32 @@ I've added all the Node dependencies using the `npm install --save-dev` syntax, 
 
 ## State of the test
 
-I've created a Yeoman Angular Web App.
+- I've created a Yeoman Angular Web App.
 
-- At present the landing page is a grey bootstrap view only :-(
+- ~~At present the landing page is a grey bootstrap view only :-( ~~
 
 - The Angular.js code is functioning and the basic requirements are complete.
 
-- I'll revisit the app as time permits to make it beautiful.
+- ~~I'll revisit the app as time permits to make it beautiful. ~~
+
+- The `Download Widget` has been re-styled
+
+- A `hero` image has been added
+
+- Example `offer` elements have been added
+
+- The item selection has been modified
 
 ### TODO
 * [x] resolve NPM dependencies
 * [x] add bootstrap ui designs
-* [ ] redesign
+* [x] redesign
+* [x] add SASS palette (presently a gray one has been implemented)
 * [ ] add SASS color palette
+* [ ] add footer
+* [ ] add new top navigation
+* [ ] add social media links
+
 
 ## Design
 
@@ -92,4 +105,6 @@ To update the CSS run:
 ```
 $ gulp sass
 ```
+
+Now, once the `gulp` default task has bee run any changes on the SCSS evoke the `watch` task which re-compiles the CSS files.
 
